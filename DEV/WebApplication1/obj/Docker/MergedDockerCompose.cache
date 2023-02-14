@@ -1,0 +1,18 @@
+name: dockercompose4721143644324151746
+services:
+  webapplication1:
+    build:
+      context: C:\Users\piyus\OneDrive\Desktop\DEV\WebApplication1
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: webapplication1
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose4721143644324151746_default
